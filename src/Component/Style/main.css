@@ -1,0 +1,115 @@
+.container {
+  background-color: #282c34;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 0.5fr 2fr 1fr;
+      grid-template-rows: 0.5fr 2fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: "Input-selector Logo Result-header" "Input Visual-result-graphics Result-text" "Calculator-button Visual-result-graphics Result-vector";
+}
+
+.Input-selector {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Input-selector;
+}
+
+.Logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: Logo;
+}
+
+.Result-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: Result-header;
+  color: #8CC63F;
+  font-size: 32px;
+}
+
+.Input {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: "Input-first" "Input-second";
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Input;
+}
+
+.Input .Input-first {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Input-first;
+}
+
+.Input .Input-second {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Input-second;
+}
+
+.Calculator-button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: Calculator-button;
+}
+
+.Result-text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: "Result-text-sides" "Result-text-angles";
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: Result-text;
+}
+
+.Result-text .Result-text-sides {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Result-text-sides;
+}
+
+.Result-text .Result-text-angles {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Result-text-angles;
+}
+
+.Result-vector {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: Result-vector;
+}
+
+.Visual-result-graphics {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: Visual-result-graphics;
+}
+/*# sourceMappingURL=main.css.map */

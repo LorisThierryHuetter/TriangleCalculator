@@ -1,0 +1,89 @@
+@import '../Variables/variables';
+
+.container {  
+  background-color: #282c34;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 0.5fr 2fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Input-selector Logo Result-header"
+    "Input Visual-result-graphics Result-text"
+    "Calculator-button Visual-result-graphics Result-vector";
+}
+
+.Input-selector { 
+  grid-area: Input-selector; 
+}
+
+.Logo { 
+  grid-area: Logo; 
+}
+
+.Result-header { 
+  grid-area: Result-header; 
+  color: $colorBBW;
+  font-size: $fontSizeBig;
+  
+}
+
+.Input {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Input-first"
+    "Input-second";
+  grid-area: Input;
+
+  .Input-first { 
+    grid-area: Input-first; 
+  }
+
+  .Input-second { 
+    grid-area: Input-second; 
+  }
+
+}
+
+.Calculator-button { 
+  grid-area: Calculator-button; 
+}
+
+.Result-text {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Result-text-sides"
+    "Result-text-angles";
+  grid-area: Result-text;
+
+  .Result-text-sides { 
+    grid-area: Result-text-sides; 
+  }
+
+  .Result-text-angles { 
+    grid-area: Result-text-angles; 
+  }
+
+}
+
+.Result-vector { 
+  grid-area: Result-vector; 
+}
+
+.Visual-result-graphics { 
+  grid-area: Visual-result-graphics; 
+}
